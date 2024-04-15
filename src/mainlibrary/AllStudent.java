@@ -23,6 +23,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author bikash
  */
+@SuppressWarnings("unused")
 public class AllStudent extends javax.swing.JFrame {
 
     /**
@@ -105,6 +106,7 @@ public class AllStudent extends javax.swing.JFrame {
                 "User ID", "UserPass", "RegDate", "UserName", "Email"
             }
         ) {
+            @SuppressWarnings("rawtypes")
             Class[] types = new Class [] {
                 java.lang.Long.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
@@ -112,6 +114,7 @@ public class AllStudent extends javax.swing.JFrame {
                 false, false, false, false, false
             };
 
+            @SuppressWarnings("rawtypes")
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }

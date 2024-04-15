@@ -23,6 +23,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author bikash
  */
+@SuppressWarnings("unused")
 public class ViewBook extends javax.swing.JFrame {
 
     /**
@@ -106,6 +107,7 @@ public class ViewBook extends javax.swing.JFrame {
                 "Book ID", "Name", "Genre", "AuthorRadio", "Publisher", "Shelf", "Row"
             }
         ) {
+            @SuppressWarnings("rawtypes")
             Class[] types = new Class [] {
                 java.lang.Long.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
@@ -113,6 +115,7 @@ public class ViewBook extends javax.swing.JFrame {
                 false, false, false, false, false, false, true
             };
 
+            @SuppressWarnings("rawtypes")
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }

@@ -2,6 +2,7 @@ package mainlibrary;
 
 import java.sql.*;
 import javax.swing.JTextField;
+@SuppressWarnings("unused")
 public class TransBookDao {
 	
 public static boolean checkBook(String bookcallno){
